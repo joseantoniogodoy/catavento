@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação de Catavento</title>
+    <link rel="stylesheet" href="index.css">    
+</head>
+
+<body>
+    
+    <div class="form">
+        <div class="row">
+            <input type="text" id="fBlade1" name="fname"> 
+            <button onclick="showBlade('blade1', document.getElementById('fBlade1').value)"> OK </button>
+        </div>
+
+        <div class="row">
+            <input type="text" id="fBlade2" name="fname"> 
+            <button onclick="showBlade('blade2', document.getElementById('fBlade2').value)"> OK </button>
+        </div>
+
+        <div class="row">
+            <input type="text" id="fBlade3" name="fname"> 
+            <button onclick="showBlade('blade3', document.getElementById('fBlade3').value)"> OK </button>
+        </div>
+
+        <div class="row">
+            <input type="text" id="fBlade4" name="fname"> 
+            <button onclick="showBlade('blade4', document.getElementById('fBlade4').value )"> OK </button>
+        </div>
+
+        <div class="row" style="display: flex; justify-content: center;">
+            <button id="btSpin" style="width: 100%;" onclick="spin()"> Girar </button>  
+            <button style="width: 100%;" onclick="hit()"> Acertar </button>                     
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="blade" id="blade1" style="top: 50%; left: 50%; transform: rotate(0deg) translateX(-50%);">Conexão</div>
+        <div class="blade" id="blade2" style="top: 50%; left: 50%; transform: rotate(90deg) translateX(-50%);">Desafio</div>
+        <div class="blade" id="blade3" style="top: 50%; left: 50%; transform: rotate(180deg) translateX(-50%);">Conceito</div>
+        <div class="blade" id="blade4" style="top: 50%; left: 50%; transform: rotate(270deg) translateX(-50%);">Mudança</div>
+    </div>
+
+    <div class="targetFrame">
+        <div class="target">
+            <div class="centro"></div>
+        </div>
+        <div class="targetLabel"> Aprendizado </div>
+    </div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>

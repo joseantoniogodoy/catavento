@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvo com HTML e CSS</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .alvo {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: red;
+        }
+
+        .alvo::before,
+        .alvo::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .alvo::before {
+            width: 200px;
+            height: 200px;
+            top: 50px;
+            left: 50px;
+            background-color: white;
+        }
+
+        .alvo::after {
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="alvo"></div>
+</body>
+</html>
